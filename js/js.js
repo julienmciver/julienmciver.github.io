@@ -1024,6 +1024,7 @@ function createRows(){
 
     newDiv.id = "page-counter";
     newDiv.style.pointerEvents = "none";
+    newDiv.style.touchAction = "none";
     newDiv.innerHTML = pageNo+1 + "/" + noPages;
 }
 
@@ -1236,6 +1237,7 @@ var imageCounter = document.createElement("div");
 newDiv.appendChild(imageCounter);
 imageCounter.id = "image-counter";
 imageCounter.style.pointerEvents = "none";
+imageCounter.style.touchAction = "none";
 console.log(imageCounter);
 /*
 if (document.documentElement.clientHeight > document.documentElement.clientWidth){
