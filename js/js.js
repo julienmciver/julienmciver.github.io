@@ -45,11 +45,12 @@ function doArrows(){
     z[0].style.top = topcoord + "px";
     z[1].style.top = topcoord + "px";
     console.log(z[0].style.position);
-    
+    /*
     if (document.documentElement.clientHeight > document.documentElement.clientWidth){
-        $("image-counter").style.right = $("viewPort").offsetWidth/2 - $("image-counter").offsetWidth/2;
-        
+        $("image-counter").style.right = $("viewBox").offsetWidth/2 - $("image-counter").offsetWidth/2 + "px";
+        console.log("BLUEBLBELUBELUBELUEBLUEBLUE");   
     }
+    */
     $("viewPort").style.display = prevState_vb;
     
 }
@@ -301,7 +302,7 @@ function recalculateDistance_vb(){
     let imageCounterr = $("image-counter");
     if (document.documentElement.clientHeight > document.documentElement.clientWidth){
         
-        imageCounterr.style.right = $("viewPort").offsetWidth/2 - imageCounterr.offsetWidth/2 + "px";
+        imageCounterr.style.right = $("viewBox").offsetWidth/2 - imageCounterr.offsetWidth/2 + "px";
     }
     else {
     imageCounterr.style.right = "1rem";
@@ -828,7 +829,8 @@ function resize(){
     if (newSize != screenSize){
         screenSize = newSize;
         noPages = calc_pages();
-      if (pageNo > noPages) pageNo = noPages-1;
+        
+        if (pageNo > noPages) pageNo = noPages-1;
     arrows[0].style.position = "static";
     arrows[1].style.position = "static";
     arrows[0].style.display = "";
@@ -1021,6 +1023,7 @@ function createRows(){
 
 
     newDiv.id = "page-counter";
+    newDiv.style.pointerEvents = "none";
     newDiv.innerHTML = pageNo+1 + "/" + noPages;
 }
 
@@ -1232,8 +1235,9 @@ repositionThings(x, viewingPos,imgDiv1);
 var imageCounter = document.createElement("div");
 newDiv.appendChild(imageCounter);
 imageCounter.id = "image-counter";
+imageCounter.style.pointerEvents = "none";
 console.log(imageCounter);
-
+/*
 if (document.documentElement.clientHeight > document.documentElement.clientWidth){
     backGroundDiv.style.display = "";
     console.log(imageCounter.offsetWidth  + "WIDTH");
@@ -1241,6 +1245,7 @@ if (document.documentElement.clientHeight > document.documentElement.clientWidth
     backGroundDiv.style.display = "";
     
 }
+*/
 
     if ("ontouchstart" in document.documentElement)
     {
