@@ -1,0 +1,122 @@
+.masthead-services{
+    
+    position:relative;
+    width:100%;
+    height:auto;
+    min-height:35rem;
+    padding:15rem 0;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.3) 0,rgba(0, 0, 0, 0.99) 90%, black 100%),url(../img/masthead_welding_services.jpg );
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-size:cover;
+    margin-bottom: 0rem;
+}
+
+.masthead-services h1{
+    font-family:'Nunito', sans-serif !important;
+    font-size:2rem !important;
+    line-height:2rem;
+    letter-spacing:.8rem;
+    background:-webkit-linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,0));-webkit-text-fill-color:none;
+    -webkit-background-clip:text;
+    color: white !important;
+    
+}
+
+body{
+    font-family: 'Nunito', sans-serif !important;
+    letter-spacing:.0625rem !important;
+}
+
+
+
+.menu-btn{
+    margin: 2rem;
+    width: 15rem;
+}
+
+.projects-section{
+    background: url(../img/pattern_bg.jpg);
+    
+}
+
+.fade-div{
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.99) 0,rgba(0, 0, 0, 0) 90%, rgba(0,0,0,0) 100%);
+    margin: 0rem; 
+    height: 3rem;
+    
+}
+
+.back-to-top{
+    margin-bottom: 0rem;
+    
+}
+
+.btt-btn {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-left: 1.6rem;
+    margin-top: 1rem;
+    line-height: 0.2rem !important;
+    font-size: 0.5rem !important;
+    
+}
+
+.masthead-services a{
+    
+    line-height: 0.2rem !important;
+
+}
+
+.content-container{
+    border: double;
+    width: 80%;
+    padding: 1rem;
+}
+
+.heading-text{
+    font-size: 2.5rem;
+    padding-left: 8rem !important;
+    
+}
+
+.content-img{
+    height:100%;
+    width:100%;
+}
+.content-img-div{
+    width:50%;
+    height:auto;
+}
+
+.content-text{
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+@media (max-width: 448px) {
+    
+    .projects-section .heading-text{
+        font-size: 1rem;
+        padding-left: 2.6rem !important;    
+        width: 100% !important; 
+       
+    }
+
+    
+    .projects-section .content-text{
+        font-size: 0.7rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
+    
+     .contact-section{
+         padding-bottom: 2rem !important;
+     }
+    
+     .content-container{
+         width: 90% !important;
+     }
+
+    }
+    
