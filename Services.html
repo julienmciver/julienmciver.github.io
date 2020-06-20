@@ -170,53 +170,62 @@
  </section>
 
   
- <!-- Contact Section -->
- <section class="contact-section bg-black" id="contact" style="padding-bottom: 1rem;">
-   <div class="container">
+ 
+   <!-- Contact Section -->
+   <section class="contact-section bg-black" id="contact" style="padding-bottom: 1rem;">
+    <div class="container">
 
-     <p class="text-white text-center" style="font-size: 2rem; margin-bottom: 3rem;">Contact Us</p>
+      <p class="text-white text-center" style="font-size: 2rem; margin-bottom: 3rem;">Contact Us</p>
 
-     <div class="row">
-       
-       <div class="col-md-4 mb-3 mb-md-0">
-         <div class="card py-4 h-100">
-           <div class="card-body text-center text-white">
-             <i class="fas fa-map-marked-alt text-primary mb-2 icon" style="color: rgb(190, 23, 23, .7) !important;"></i>
-             <h4 class="text-uppercase m-0">Address</h4>
-             <hr class="my-4">
-             <div class="small text-white-50">10 Foreman Street Spartan Kempton Park</div>
-           </div>
-         </div>
-       </div>
+      <div class="row">
 
-       <div class="col-md-4 mb-3 mb-md-0">
-         <div class="card py-4 h-100">
-           <div class="card-body text-center text-white">
-             <i class="fas fa-envelope text-primary mb-2 icon" style=" color:rgb(190, 23, 23, .7)!important;"></i>
-             <h4 class="text-uppercase m-0">Email</h4>
-             <hr class="my-4">
-             <div class="small text-white-50">
-               <a href="#" style="text-decoration: none; color: rgb(255,255,255, .5)">sales@appliedwelding.co.za</a>
-             </div>
-           </div>
-         </div>
-       </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center text-white">
+                <i class="fas fa-map-marked-alt text-primary mb-2 icon" style="color: rgb(190, 23, 23, .7) !important;"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-white-50 popup" id = "map-link" onmouseover="fadeIn_popup()"><a target="_blank" href = "https://goo.gl/maps/J76pErzogyYrPzmp9">10 Foreman Street Spartan Kempton Park <span class="popuptext" id="myPopup">To Google Maps<br>
+                <i class="fa fa-map-marker icon mt-2 mb-2" style="font-size:36px"></i></span></a></div>
+            </div>
+          </div>
+        </div>
 
-       <div class="col-md-4 mb-3 mb-md-0">
-         <div class="card py-4 h-100">
-           <div class="card-body text-center text-white">
-             <i class="fas fa-mobile-alt text-primary mb-2 icon" style="color: rgb(190, 23, 23, .7) !important;"></i>
-             <h4 class="text-uppercase m-0">Phone</h4>
-             <hr class="my-4">
-             <div class="small text-white-50">+2711 974 5888</div>
-           </div>
-         </div>
-       </div>
-     </div>
-     
 
-   </div>
- </section>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center text-white">
+              <i class="fas fa-envelope text-primary mb-2 icon" style=" color:rgb(190, 23, 23, .7)!important;"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-white-50 popup" onmouseover="fadeIn_popup_3()" id = "email-div" >
+               <a href = "mailto:sales@appliedwelding.co.za">sales@appliedwelding.co.za<span class="popuptext" id="myPopup_3"><str>Email us Anytime<br><i class="fa fa-paper-plane icon m-2" style="font-size: 2rem;" aria-hidden="true"></i></str></str></span></a>
+              </a></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center text-white">
+              <i class="fas fa-mobile-alt text-primary mb-2 icon" style="color: rgb(190, 23, 23, .7) !important;"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-white-50 popup" onmouseover = "fadeIn_popup_2()" id = "phone-div"><a href = "tel:+27119745888">(+27)11 974 5888<span class="popuptext" id="myPopup_2"><str></str></str></span></a>
+              </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    
+<!--contacts section script-->
+<script type="text/javascript" src="js\contacts.js"></script>
+  </section> <!--Contact us -->
+
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
