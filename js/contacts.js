@@ -1,4 +1,9 @@
 // When the user clicks on div, open the popup
+//onmouseover = "fadeIn_popup_2()"
+function isTouchDevice() {
+    return 'ontouchstart' in document.documentElement;
+}
+
 function fadeIn_popup() {
     var popup = document.getElementById("myPopup");
     popup.classList.add("show");
@@ -70,14 +75,24 @@ function checkDate(){
 
 function changePopup(){
     if (checkDate()){
-        document.getElementById("myPopup_2").innerHTML = "We are Open";
+        document.getElementById("myPopup_2").innerHTML = "We are Open<br><i style = \"font-size: 2rem; color:rgba(23, 190, 45, 0.7) !important;\"class=\"fas m-2 fa-clock\"></i>";
     }
     else{
         document.getElementById("myPopup_2").innerHTML = "We are Closed<br><i style = \"font-size: 2rem;\"class=\"fas m-2 fa-clock icon\"></i>";
     }
 }
 
+if(isTouchDevice()){
+}
+else{
 checkDate();
 document.getElementById("map-link").addEventListener("mouseleave", fadeOut_popup);
 document.getElementById("email-div").addEventListener("mouseleave", fadeOut_popup_3);
 document.getElementById("phone-div").addEventListener("mouseleave", fadeOut_popup_2);
+document.getElementById("map-link").addEventListener("mouseover", fadeIn_popup);
+document.getElementById("email-div").addEventListener("mouseover", fadeIn_popup_3);
+document.getElementById("phone-div").addEventListener("mouseover", fadeIn_popup_2);
+
+console.log("BLUEBLUE");
+
+}

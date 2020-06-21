@@ -5,6 +5,7 @@ body{
 
 #mainNav{
     background-color: rgba(22,22,22,0.9) !important;
+    
        }
        
    #mainNav .navbar-toggler {
@@ -287,7 +288,19 @@ body{
         
     
     }
+
+    #logo{
+        width: 3.7rem;
+        height: 3.7rem;
+        margin : 0 1rem 0 2rem;
+        padding: 0;
+    }
+
+
     
+    #email-div{
+        word-wrap: break-word;
+    }
     .contact-section .card h4{
         font-size:.8rem;
         font-family:'Nunito', sans-serif !important;
@@ -381,14 +394,15 @@ body{
                   /* Toggle this class - hide and show the popup */
                   .popup .show {
                     visibility: visible;
-                    -webkit-animation: fadeIn 1s;
-                    animation: fadeIn 1s;
+                    -webkit-animation: fadeIn 0.5s;
+                    animation: fadeIn 0.5s;
                   }
 
                   .popup .hide {
-                      visibility: hidden;
-                      -webkit-animation: fadeOut 1s;
-                      animation: fadeOut 1s;
+                      visibility: visible;
+                      -webkit-animation: fadeOut 0.5s;
+                      animation: fadeOut 0.5s;
+                      opacity: 0;
                       }
                   
                   /* Add animation (fade in the popup) */
