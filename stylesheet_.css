@@ -1,0 +1,155 @@
+#mainDiv_{
+    height: 5rem;
+    width: 100vw;
+    background-color: rgba(22,22,22,0.9);
+    color: rgba(255,255,255,.5);
+    border: 0 solid rgba(255,255,255,.5);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#brandDiv_{
+
+    /*(
+  brandAnchor.href = "#page-top";
+  brandAnchor.style.width = 100 + "%";
+  brandAnchor.className = ("js-scroll-trigger");  //todo: change this so I don't rely on these classes.
+  brandAnchor.style.height = 100 + "%";
+  brandDiv = document.createElement("div");
+
+  brandDiv.style.display = "table";
+
+  brandDiv.style.float = "left";
+  brandDiv.style.fontWeight = "700";
+  //brandDiv.style.marginRight = "1rem";
+  brandDiv.innerHTML = "Applied Welding Technology";
+  brandDiv.style.padding = "0 0 0 5%";
+  brandDiv.style.width = 50 + "%";
+
+  brandDiv.style.fontSize = "1.25em";
+  brandDiv.style.height = 100 + "%";
+  brandDiv.style.display = "flex";
+  brandDiv.style.alignItems = "center";
+  brandDiv.style.color = navBar_color;*/
+    width: 50vw ;
+    display: flex;
+    float: left;
+    font-weight: 700;
+    padding: 0 0 0 5%;
+    font-size: 1.25rem;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    color: rgba(255,255,255,.5);
+    
+    
+    
+}
+
+#brandAnchor_{
+    
+    height: 100%;
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#mainMenu_{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.menu-item_{
+    width: 23%;
+    height: 100%;
+    float: left;
+}
+
+.menu-anchor_{
+    height: 100%;
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+}
+
+.menu-anchor_:hover{
+    color: rgb(255,255,255);
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: solid rgb(190, 23, 23);
+}
+
+#logo_{
+    /*logo.style.height = 80 + "%";
+  logo.style.width = logo.clietWidth + "px";
+  logo.src = "img/AWT_logo transparent.png";
+  logo.style.float = "left";
+  logo.style.marginLeft = "5%";
+  brandAnchor.style.textOverflow = "ellipsis";
+  brandAnchor.style.textAlign = "center";*/
+    height: 100%;
+  float: left;
+    object-fit: contain;
+    padding: 0.4rem;
+    margin-left: 1rem;
+}
+
+#menuDiv_{
+    visibility: hidden;
+}
+
+.activeLink_{
+    border-bottom: solid rgb(190, 23, 23);
+}
+
+@media (max-width: 890px){
+    #brandDiv_{
+        width: 60%;
+        font-size: 1rem;
+    }   
+
+    #brandAnchor_{
+        
+    }
+
+    
+
+    #mainMenu_{
+        height: 0;
+        width: 100%;
+        position: fixed;
+        transition: height 0.5s;
+        overflow-y: hidden;
+        background-color: rgba(22,22,22,0.9);
+    }
+
+    .menu-item_{
+        height: 25%;
+        width: 100%;
+    }
+    #menuDiv_{
+        visibility: visible;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        font-size: 3rem;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+
+    #logo_{
+        margin: 0;
+    }
+
+}

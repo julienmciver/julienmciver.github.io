@@ -60,7 +60,7 @@ function checkDate(){
         return false;
     }
     else{
-        d3 = d2.split(":");
+        d3 = d2.toString().split(":");
         if (d3[0] <= 16 && d3[0] >= 7){
             if (d3[1] < 30){
                 return true;

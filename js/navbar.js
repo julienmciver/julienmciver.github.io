@@ -1,22 +1,21 @@
+var menu = document.getElementById("mainMenu_");
 
+var menuHeight = document.getElementById("mainDiv_").offsetHeight;
+document.getElementById("mainMenu_").style.top = menuHeight + "px";
+console.log(menu);
+var closed = true;
+document.getElementById("menuDiv_").addEventListener("click", function(){
+  menu.classList.toggle("open");
+  if (menu.className.search("open") >= 0){
+    menu.style.height = document.documentElement.clientHeight/1.6 + "px";
+    
+  }
+  else{
+    menu.style.height = 0;
+    closed = true;
+    console.log("HER");
+  }
+});
 
-// Get the container element
-var textContainer = document.getElementById("navbarResponsive");
-
-// Get all buttons with class="btn" inside the container
-var nav_items = textContainer.getElementsByClassName("nav-link");
-
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < nav-items.length; i++) {
-  nav_items[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-
-    // If there's no active class
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-
-    // Add the active class to the current/clicked button
-    this.className += " active";
-  });
-}
+var mn = document.getElementById("menuDiv_");
+mn.style.height = menuHeight + "px";

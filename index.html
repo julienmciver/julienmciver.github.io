@@ -4,7 +4,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Applied Welding Technology</title>
+        <title>Applied Welding Technology - Welcome</title>
 
 
         <!--Fonts-->
@@ -27,50 +27,38 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+
+        <link rel="stylesheet" href="stylesheet_.css">
     </head>
 
 
-    <body id="page-top">
+    <body id="page-top" data-pageName="Home">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Applied Welding Technology<img id = "logo" src="img\output-onlinepngtools.png"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger active-link" href="#page-top">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Services.html">Services</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Gallery.html">Gallery</a>
-          </li>
-          
-        </ul>
+
+  <nav id = "nav-elem_">
+    <div id = "mainDiv_">
+      <div id = "brandDiv_"><a id = "brandAnchor_" href = "#page-top" class="js-scroll-trigger">Applied Welding Technology</a>
+      <img src = "img\AWT_logo transparent.png" id = "logo_"></div>
+      <div id = "mainMenu_">
+        <div class="menu-item_"><a href="#page-top" id = "Home" class="menu-anchor_ js-scroll-trigger activeLink_" >Home</a></div>
+        <div class="menu-item_"><a href="Services.html" id = "Services" class="menu-anchor_ js-scroll-trigger">Services</a></div>
+        <div class="menu-item_"><a href="Gallery.html" id = "Gallery" class="menu-anchor_ js-scroll-trigger">Gallery</a></div>
+        <div class="menu-item_"><a href="#contact" id = "Contact" class="menu-anchor_ js-scroll-trigger">Contact</a></div>
       </div>
+    <div id = "menuDiv_"><i class="fas fa-bars" id = "menuIcon_"></i></div>
     </div>
   </nav>
+  <script src="js\navbar.js"></script>
+ 
 
-  <script src="js\navbarlogo.js"></script>
-
-<!--/navigation-->
+  <!--/navigation-->
 
 <!-- Header -->
 <header class="masthead" id="header">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Applied Welding Technology</h1>
+        <h1 class="mx-auto my-0 text-uppercase title">Applied Welding Technology</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Specialists in Repairing Machine Components by Welding</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">About Us</a>
       </div>
@@ -82,7 +70,7 @@
    <!-- About Section -->
    <section id="about" class="about-section text-center" style="padding-top: 0rem; padding-bottom: 1rem;">
     <div class="fade-div" style="height: 3rem;"></div>
-    
+    <div style="" id="titl">Home</div>
       
     <div class="d-flex text-white heading-text">About Us</div>
     <div class="container content-container">

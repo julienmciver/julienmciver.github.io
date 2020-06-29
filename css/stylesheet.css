@@ -5,6 +5,7 @@ body{
 
 #mainNav{
     background-color: rgba(22,22,22,0.9) !important;
+    display: none;
     
        }
        
@@ -20,7 +21,8 @@ body{
    #mainNav .navbar-brand{
            color:#161616   ;
            font-weight:700;
-           padding:.9rem 0
+           padding:.9rem 0;
+           margin-right: 1rem;
        }
    #mainNav .navbar-nav .nav-item:hover{
            color:rgba(255, 255, 255) !important;
@@ -40,7 +42,7 @@ body{
                padding-bottom:0;
                border-bottom:none;
                background-color:transparent;
-               transition:background-color .3s ease-in-out
+               transition:background-color .3s ease-in-out;
                color: rgba(255,255,255,.5)
            }
        }
@@ -51,9 +53,68 @@ body{
    #mainNav .nav-link{
        transition:none;
        padding:2rem 1.5rem;
-       color:rgba(255,255,255,.5);
+    }
+
+    .scroll-item{
+        background-color: rgba(22,22,22,0.9);
+    }
+
+    #menuIcon{
+        margin-right: 2rem;
+        color: rgba(255,255,255,0.7);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+
+    }
+
+    #mainMenu{
+        /*
+        mainMenu.style.float = "right";
+        mainMenu.style.width = "40%";
+        mainMenu.style.height = "100%";
+        mainMenu.style.marginRight = 10 + "%";*/
+        float: right;
+        width: 40%;
+        height: 100%;
+        margin-right: 10%;;
+    }
+
+    @media (max-width: 820px){
+        #menuIcon{
+            visibility: visible;
+
+        }
+
+        /*mainMenu.style.display = "block";
+          mainMenu.style.height = 0 + "px";
+          mainMenu.style.width = "100%";
+          mainMenu.className += " scrollMenu";*/
+          #mainMenu{
+              display: block;
+              height: 0px;
+              position: fixed;
+              overflow-y: hidden;
+              width: 100%;
+              right: 0;
+              min-width: 100vw !important;
+              margin: 0 !important;
+              height: 0;
+              transition: height 0.5s;
+          }
+
+    }
+
+   .scrollMenu{
        
    }
+
+   
+
+
    #mainNav .nav-link:hover{
        color:rgba(255, 255, 255) !important;
        border-bottom: solid rgb(190, 23, 23) !important;
@@ -64,6 +125,21 @@ body{
        border-bottom: solid rgb(190, 23, 23);
    }
 
+   .nav-div{
+       color: rgba(255,255,255,0.5);
+       cursor: pointer;
+   }
+
+   .nav-div:hover{
+       color:rgba(255, 255, 255) !important;
+       border-bottom: solid rgb(190, 23, 23) !important;
+       background-color:rgba(0, 0, 0, 0.5) !important;
+   }
+
+   .nav-anchor{
+       text-decoration: none;
+
+   }
    
    #mainNav .navbar-shrink{
        background-color:#fff;
@@ -290,11 +366,13 @@ body{
     }
 
     #logo{
-        width: 3.7rem;
-        height: 3.7rem;
-        margin : 0 1rem 0 2rem;
+        max-width: 100%;
+        max-height: 100%;
+        float: left;
         padding: 0;
     }
+
+    
 
 
     
