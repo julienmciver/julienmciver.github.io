@@ -17,5 +17,10 @@ document.getElementById("menuDiv_").addEventListener("click", function(){
   }
 });
 
+document.getElementById("Contact").addEventListener("click", function(){
+  menu.style.height = 0;
+  menu.classList.toggle("open");
+});
+
 var mn = document.getElementById("menuDiv_");
 mn.style.height = menuHeight + "px";
