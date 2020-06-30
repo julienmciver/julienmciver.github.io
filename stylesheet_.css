@@ -155,5 +155,7 @@ body{
         margin: 0;
         
     }
-
+    #mainDiv_{
+        height: 4rem;
+    }
 }
