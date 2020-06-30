@@ -1,3 +1,8 @@
+
+body{
+    font-family: 'Nunito', sans-serif !important;
+    letter-spacing:.0625rem !important;
+}
 .masthead-services{
     
     position:relative;
