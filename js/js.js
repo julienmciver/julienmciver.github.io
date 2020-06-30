@@ -1214,9 +1214,9 @@ function viewBoxDiv(){
     let offset = calcViewBoxPerc();
     
     let hVal = 50 - offset[0];
-    let mainNav = $("mainNav").offsetHeight;
-    let vertDist = (document.documentElement.clientHeight - 20 - mainNav - newDiv.offsetHeight)/2;
-    let mainNavOffset = ((mainNav + vertDist )/document.documentElement.clientHeight)*100;
+    let mainDiv_ = $("mainDiv_").offsetHeight;
+    let vertDist = (document.documentElement.clientHeight - 20 - mainDiv_ - newDiv.offsetHeight)/2;
+    let mainDiv_Offset = ((mainDiv_ + vertDist )/document.documentElement.clientHeight)*100;
     newDiv.style.left = hVal + "%";
     newDiv.style.top = 50 - (((newDiv.offsetHeight/2)/document.documentElement.clientHeight)*100) + "%";
     newDiv.classList.add("viewBox");
@@ -1282,26 +1282,26 @@ if (document.documentElement.clientHeight > document.documentElement.clientWidth
 
 function fadeBoxIn(){
     let x = $("viewPort").style.opacity/1;
-    let y = $("mainNav").style.opacity/1;
+    let y = $("mainDiv_").style.opacity/1;
     y -= (1/25);
     x += (1/25);
     $("viewPort").style.opacity = x;
-    $("mainNav").style.opacity = y;
+    $("mainDiv_").style.opacity = y;
     
     if (x >= 1){
         $("viewPort").style.opacity = 1;
-        $("mainNav").style.opacity = 0;
+        $("mainDiv_").style.opacity = 0;
         
-    $("mainNav").style.display = "none";
+    $("mainDiv_").style.display = "none";
         clearInterval(time);
     }
      
 }
 
 function fadeBoxOut(){
-    let y = $("mainNav").style.opacity/1;
+    let y = $("mainDiv_").style.opacity/1;
     y += (1/25);
-    $("mainNav").style.opacity = y;
+    $("mainDiv_").style.opacity = y;
     
     let x = $("viewPort").style.opacity/1;
     x -= 1/25;
@@ -1311,7 +1311,7 @@ function fadeBoxOut(){
         $("viewPort").style.opacity = 0;
         clearInterval(time);
         $("viewPort").style.display = "none";
-        $("mainNav").style.opacity = 1;
+        $("mainDiv_").style.opacity = 1;
         
    
     prevState_vb = "none";
@@ -1333,12 +1333,12 @@ function fadeBoxInt(){
     if (viewBoxBool){
         $("viewPort").removeEventListener("click", fadeBoxInt);
   
-        $("mainNav").style.display = "";
+        $("mainDiv_").style.display = "";
         time = setInterval(fadeBoxOut, 10);
     }
     else if (event.target.id == "escape-cross"){
         $("viewPort").removeEventListener("click", fadeBoxInt);      
-        $("mainNav").style.display = "";
+        $("mainDiv_").style.display = "";
         toggleViewPortBool();
         time = setInterval(fadeBoxOut, 10);
         
