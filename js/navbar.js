@@ -22,5 +22,14 @@ document.getElementById("Contact").addEventListener("click", function(){
   menu.classList.toggle("open");
 });
 
+var activeLinks = document.getElementsByClassName("activeLink_");
+
+for (i = 0; i< activeLinks.length; i++){
+  activeLinks[i].addEventListener("click", function(){
+    menu.style.height = 0;
+    menu.classList.toggle("open");
+  })
+}
+
 var mn = document.getElementById("menuDiv_");
 mn.style.height = menuHeight + "px";
