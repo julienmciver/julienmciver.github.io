@@ -1,4 +1,7 @@
-#mainDiv_{
+body{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing:.0625rem !important;
+}#mainDiv_{
     height: 5rem;
     width: 100vw;
     background-color: rgba(22,22,22,0.9);
